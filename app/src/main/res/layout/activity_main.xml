@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:background="@android:color/black"
     tools:context="com.example.kevin.myrestaurant.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/findRestaurantsButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="114dp"
+        android:layout_marginBottom="150dp"
         android:text="My Restaurants"
-        android:textColor="@color/colorPrimaryText"
+        android:textColor="@color/colorIcons"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -27,9 +35,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="137dp"
-        android:text="Find a place to eat!"
-        android:textColor="@color/colorIcons"
         android:background="@color/colorAccent"
+        android:text="Find a place to eat!"
+        android:textColor="@color/colorIcons" />
 
-        />
+
 </RelativeLayout>
