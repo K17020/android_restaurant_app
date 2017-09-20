@@ -1,10 +1,13 @@
 package com.example.kevin.myrestaurant;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import static android.R.attr.start;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
         mfindRestaurantsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Toast pops message  on screen
-                // Takes in 3 param
 
-                // A context, A message, and a length of time
-                Toast.makeText(MainActivity.this, "Hello lets find a place to eat!", Toast.LENGTH_LONG).show();
+                // When the button I want you to execute this
+                Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
+
+                // Goes to a new view
+                startActivity(intent);
             }
         });
     }
