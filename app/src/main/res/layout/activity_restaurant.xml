@@ -4,6 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kevin.myrestaurant.RestaurantActivity">
+    tools:context="com.example.kevin.myrestaurant.RestaurantActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
+    <TextView
+        android:id="@+id/LocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:back
+        tools:layout_editor_absoluteX="462dp"
+        tools:layout_editor_absoluteY="171dp" />
 </android.support.constraint.ConstraintLayout>
